@@ -21,6 +21,14 @@
 		EF2834E818F75D06006295B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2834CA18F75D06006295B2 /* UIKit.framework */; };
 		EF2834F018F75D06006295B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF2834EE18F75D06006295B2 /* InfoPlist.strings */; };
 		EF2834F218F75D06006295B2 /* Blood_Flow_SimulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2834F118F75D06006295B2 /* Blood_Flow_SimulatorTests.m */; };
+		EF28350318F76442006295B2 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2834FB18F76442006295B2 /* Accelerate.framework */; };
+		EF28350418F76442006295B2 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2834FC18F76442006295B2 /* AssetsLibrary.framework */; };
+		EF28350518F76442006295B2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2834FD18F76442006295B2 /* AVFoundation.framework */; };
+		EF28350618F76442006295B2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2834FE18F76442006295B2 /* CoreMedia.framework */; };
+		EF28350718F76442006295B2 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2834FF18F76442006295B2 /* CoreVideo.framework */; };
+		EF28350818F76442006295B2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF28350018F76442006295B2 /* MobileCoreServices.framework */; };
+		EF28350918F76442006295B2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF28350118F76442006295B2 /* OpenGLES.framework */; };
+		EF28350A18F76442006295B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF28350218F76442006295B2 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,14 @@
 		EF2834ED18F75D06006295B2 /* Blood Flow SimulatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Blood Flow SimulatorTests-Info.plist"; sourceTree = "<group>"; };
 		EF2834EF18F75D06006295B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EF2834F118F75D06006295B2 /* Blood_Flow_SimulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Blood_Flow_SimulatorTests.m; sourceTree = "<group>"; };
+		EF2834FB18F76442006295B2 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		EF2834FC18F76442006295B2 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		EF2834FD18F76442006295B2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EF2834FE18F76442006295B2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		EF2834FF18F76442006295B2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		EF28350018F76442006295B2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		EF28350118F76442006295B2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		EF28350218F76442006295B2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF28350318F76442006295B2 /* Accelerate.framework in Frameworks */,
+				EF28350418F76442006295B2 /* AssetsLibrary.framework in Frameworks */,
+				EF28350518F76442006295B2 /* AVFoundation.framework in Frameworks */,
+				EF28350618F76442006295B2 /* CoreMedia.framework in Frameworks */,
+				EF28350718F76442006295B2 /* CoreVideo.framework in Frameworks */,
+				EF28350818F76442006295B2 /* MobileCoreServices.framework in Frameworks */,
+				EF28350918F76442006295B2 /* OpenGLES.framework in Frameworks */,
+				EF28350A18F76442006295B2 /* QuartzCore.framework in Frameworks */,
 				EF2834C918F75D06006295B2 /* CoreGraphics.framework in Frameworks */,
 				EF2834CB18F75D06006295B2 /* UIKit.framework in Frameworks */,
 				EF2834C718F75D06006295B2 /* Foundation.framework in Frameworks */,
@@ -101,6 +125,14 @@
 		EF2834C518F75D06006295B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF2834FB18F76442006295B2 /* Accelerate.framework */,
+				EF2834FC18F76442006295B2 /* AssetsLibrary.framework */,
+				EF2834FD18F76442006295B2 /* AVFoundation.framework */,
+				EF2834FE18F76442006295B2 /* CoreMedia.framework */,
+				EF2834FF18F76442006295B2 /* CoreVideo.framework */,
+				EF28350018F76442006295B2 /* MobileCoreServices.framework */,
+				EF28350118F76442006295B2 /* OpenGLES.framework */,
+				EF28350218F76442006295B2 /* QuartzCore.framework */,
 				EF2834C618F75D06006295B2 /* Foundation.framework */,
 				EF2834C818F75D06006295B2 /* CoreGraphics.framework */,
 				EF2834CA18F75D06006295B2 /* UIKit.framework */,
