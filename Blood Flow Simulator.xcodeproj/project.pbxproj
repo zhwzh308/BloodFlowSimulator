@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF2834C718F75D06006295B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2834C618F75D06006295B2 /* Foundation.framework */; };
+		EF2834C918F75D06006295B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2834C818F75D06006295B2 /* CoreGraphics.framework */; };
+		EF2834CB18F75D06006295B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2834CA18F75D06006295B2 /* UIKit.framework */; };
+		EF2834D118F75D06006295B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF2834CF18F75D06006295B2 /* InfoPlist.strings */; };
+		EF2834D318F75D06006295B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2834D218F75D06006295B2 /* main.m */; };
+		EF2834D718F75D06006295B2 /* simulatorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2834D618F75D06006295B2 /* simulatorAppDelegate.m */; };
+		EF2834DA18F75D06006295B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2834D818F75D06006295B2 /* Main.storyboard */; };
+		EF2834DD18F75D06006295B2 /* simulatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2834DC18F75D06006295B2 /* simulatorViewController.m */; };
+		EF2834DF18F75D06006295B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2834DE18F75D06006295B2 /* Images.xcassets */; };
+		EF2834E618F75D06006295B2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2834E518F75D06006295B2 /* XCTest.framework */; };
+		EF2834E718F75D06006295B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2834C618F75D06006295B2 /* Foundation.framework */; };
+		EF2834E818F75D06006295B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2834CA18F75D06006295B2 /* UIKit.framework */; };
+		EF2834F018F75D06006295B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF2834EE18F75D06006295B2 /* InfoPlist.strings */; };
+		EF2834F218F75D06006295B2 /* Blood_Flow_SimulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2834F118F75D06006295B2 /* Blood_Flow_SimulatorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF2834E918F75D06006295B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF2834BB18F75D06006295B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF2834C218F75D06006295B2;
+			remoteInfo = "Blood Flow Simulator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF2834C318F75D06006295B2 /* Blood Flow Simulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blood Flow Simulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2834C618F75D06006295B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF2834C818F75D06006295B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF2834CA18F75D06006295B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF2834CE18F75D06006295B2 /* Blood Flow Simulator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Blood Flow Simulator-Info.plist"; sourceTree = "<group>"; };
+		EF2834D018F75D06006295B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF2834D218F75D06006295B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF2834D418F75D06006295B2 /* Blood Flow Simulator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blood Flow Simulator-Prefix.pch"; sourceTree = "<group>"; };
+		EF2834D518F75D06006295B2 /* simulatorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = simulatorAppDelegate.h; sourceTree = "<group>"; };
+		EF2834D618F75D06006295B2 /* simulatorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = simulatorAppDelegate.m; sourceTree = "<group>"; };
+		EF2834D918F75D06006295B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF2834DB18F75D06006295B2 /* simulatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = simulatorViewController.h; sourceTree = "<group>"; };
+		EF2834DC18F75D06006295B2 /* simulatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = simulatorViewController.m; sourceTree = "<group>"; };
+		EF2834DE18F75D06006295B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF2834E418F75D06006295B2 /* Blood Flow SimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blood Flow SimulatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2834E518F75D06006295B2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EF2834ED18F75D06006295B2 /* Blood Flow SimulatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Blood Flow SimulatorTests-Info.plist"; sourceTree = "<group>"; };
+		EF2834EF18F75D06006295B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF2834F118F75D06006295B2 /* Blood_Flow_SimulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Blood_Flow_SimulatorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF2834C018F75D06006295B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2834C918F75D06006295B2 /* CoreGraphics.framework in Frameworks */,
+				EF2834CB18F75D06006295B2 /* UIKit.framework in Frameworks */,
+				EF2834C718F75D06006295B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF2834E118F75D06006295B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2834E618F75D06006295B2 /* XCTest.framework in Frameworks */,
+				EF2834E818F75D06006295B2 /* UIKit.framework in Frameworks */,
+				EF2834E718F75D06006295B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF2834BA18F75D06006295B2 = {
+			isa = PBXGroup;
+			children = (
+				EF2834CC18F75D06006295B2 /* Blood Flow Simulator */,
+				EF2834EB18F75D06006295B2 /* Blood Flow SimulatorTests */,
+				EF2834C518F75D06006295B2 /* Frameworks */,
+				EF2834C418F75D06006295B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF2834C418F75D06006295B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF2834C318F75D06006295B2 /* Blood Flow Simulator.app */,
+				EF2834E418F75D06006295B2 /* Blood Flow SimulatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF2834C518F75D06006295B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF2834C618F75D06006295B2 /* Foundation.framework */,
+				EF2834C818F75D06006295B2 /* CoreGraphics.framework */,
+				EF2834CA18F75D06006295B2 /* UIKit.framework */,
+				EF2834E518F75D06006295B2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF2834CC18F75D06006295B2 /* Blood Flow Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				EF2834D518F75D06006295B2 /* simulatorAppDelegate.h */,
+				EF2834D618F75D06006295B2 /* simulatorAppDelegate.m */,
+				EF2834D818F75D06006295B2 /* Main.storyboard */,
+				EF2834DB18F75D06006295B2 /* simulatorViewController.h */,
+				EF2834DC18F75D06006295B2 /* simulatorViewController.m */,
+				EF2834DE18F75D06006295B2 /* Images.xcassets */,
+				EF2834CD18F75D06006295B2 /* Supporting Files */,
+			);
+			path = "Blood Flow Simulator";
+			sourceTree = "<group>";
+		};
+		EF2834CD18F75D06006295B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF2834CE18F75D06006295B2 /* Blood Flow Simulator-Info.plist */,
+				EF2834CF18F75D06006295B2 /* InfoPlist.strings */,
+				EF2834D218F75D06006295B2 /* main.m */,
+				EF2834D418F75D06006295B2 /* Blood Flow Simulator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF2834EB18F75D06006295B2 /* Blood Flow SimulatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF2834F118F75D06006295B2 /* Blood_Flow_SimulatorTests.m */,
+				EF2834EC18F75D06006295B2 /* Supporting Files */,
+			);
+			path = "Blood Flow SimulatorTests";
+			sourceTree = "<group>";
+		};
+		EF2834EC18F75D06006295B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF2834ED18F75D06006295B2 /* Blood Flow SimulatorTests-Info.plist */,
+				EF2834EE18F75D06006295B2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF2834C218F75D06006295B2 /* Blood Flow Simulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF2834F518F75D06006295B2 /* Build configuration list for PBXNativeTarget "Blood Flow Simulator" */;
+			buildPhases = (
+				EF2834BF18F75D06006295B2 /* Sources */,
+				EF2834C018F75D06006295B2 /* Frameworks */,
+				EF2834C118F75D06006295B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blood Flow Simulator";
+			productName = "Blood Flow Simulator";
+			productReference = EF2834C318F75D06006295B2 /* Blood Flow Simulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF2834E318F75D06006295B2 /* Blood Flow SimulatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF2834F818F75D06006295B2 /* Build configuration list for PBXNativeTarget "Blood Flow SimulatorTests" */;
+			buildPhases = (
+				EF2834E018F75D06006295B2 /* Sources */,
+				EF2834E118F75D06006295B2 /* Frameworks */,
+				EF2834E218F75D06006295B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF2834EA18F75D06006295B2 /* PBXTargetDependency */,
+			);
+			name = "Blood Flow SimulatorTests";
+			productName = "Blood Flow SimulatorTests";
+			productReference = EF2834E418F75D06006295B2 /* Blood Flow SimulatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF2834BB18F75D06006295B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = simulator;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Wenzhong Zhang";
+				TargetAttributes = {
+					EF2834E318F75D06006295B2 = {
+						TestTargetID = EF2834C218F75D06006295B2;
+					};
+				};
+			};
+			buildConfigurationList = EF2834BE18F75D06006295B2 /* Build configuration list for PBXProject "Blood Flow Simulator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF2834BA18F75D06006295B2;
+			productRefGroup = EF2834C418F75D06006295B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF2834C218F75D06006295B2 /* Blood Flow Simulator */,
+				EF2834E318F75D06006295B2 /* Blood Flow SimulatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF2834C118F75D06006295B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2834DF18F75D06006295B2 /* Images.xcassets in Resources */,
+				EF2834D118F75D06006295B2 /* InfoPlist.strings in Resources */,
+				EF2834DA18F75D06006295B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF2834E218F75D06006295B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2834F018F75D06006295B2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF2834BF18F75D06006295B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2834D318F75D06006295B2 /* main.m in Sources */,
+				EF2834DD18F75D06006295B2 /* simulatorViewController.m in Sources */,
+				EF2834D718F75D06006295B2 /* simulatorAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF2834E018F75D06006295B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2834F218F75D06006295B2 /* Blood_Flow_SimulatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF2834EA18F75D06006295B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF2834C218F75D06006295B2 /* Blood Flow Simulator */;
+			targetProxy = EF2834E918F75D06006295B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF2834CF18F75D06006295B2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF2834D018F75D06006295B2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF2834D818F75D06006295B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF2834D918F75D06006295B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF2834EE18F75D06006295B2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF2834EF18F75D06006295B2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF2834F318F75D06006295B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF2834F418F75D06006295B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF2834F618F75D06006295B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Blood Flow Simulator/Blood Flow Simulator-Prefix.pch";
+				INFOPLIST_FILE = "Blood Flow Simulator/Blood Flow Simulator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF2834F718F75D06006295B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Blood Flow Simulator/Blood Flow Simulator-Prefix.pch";
+				INFOPLIST_FILE = "Blood Flow Simulator/Blood Flow Simulator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EF2834F918F75D06006295B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Blood Flow Simulator.app/Blood Flow Simulator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Blood Flow Simulator/Blood Flow Simulator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Blood Flow SimulatorTests/Blood Flow SimulatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EF2834FA18F75D06006295B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Blood Flow Simulator.app/Blood Flow Simulator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Blood Flow Simulator/Blood Flow Simulator-Prefix.pch";
+				INFOPLIST_FILE = "Blood Flow SimulatorTests/Blood Flow SimulatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF2834BE18F75D06006295B2 /* Build configuration list for PBXProject "Blood Flow Simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF2834F318F75D06006295B2 /* Debug */,
+				EF2834F418F75D06006295B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF2834F518F75D06006295B2 /* Build configuration list for PBXNativeTarget "Blood Flow Simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF2834F618F75D06006295B2 /* Debug */,
+				EF2834F718F75D06006295B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF2834F818F75D06006295B2 /* Build configuration list for PBXNativeTarget "Blood Flow SimulatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF2834F918F75D06006295B2 /* Debug */,
+				EF2834FA18F75D06006295B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF2834BB18F75D06006295B2 /* Project object */;
+}
