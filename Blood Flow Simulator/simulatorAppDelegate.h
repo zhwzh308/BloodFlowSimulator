@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface simulatorAppDelegate : UIResponder <UIApplicationDelegate>
+@class simulatorViewController;
+
+@interface simulatorAppDelegate : UIResponder <UIApplicationDelegate> {
+    simulatorViewController *simulatorVC;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) simulatorViewController *simulatorVC;
 
 @end

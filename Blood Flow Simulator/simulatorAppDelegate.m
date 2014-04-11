@@ -8,6 +8,9 @@
 
 #import "simulatorAppDelegate.h"
 
+#pragma mark -
+#pragma mark Blood flow simulator lifecycle
+
 @implementation simulatorAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -41,6 +44,18 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark -
+#pragma mark -
+
+- (void) applicationDidReceiveMemoryWarning:(UIApplication *)application {
+    // Free up resourse!
+}
+
+- (void) dealloc {
+    // Deallocation
+    // [super dealloc]; Compiler does this.
 }
 
 @end

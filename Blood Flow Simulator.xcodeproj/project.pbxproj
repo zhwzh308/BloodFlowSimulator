@@ -29,6 +29,8 @@
 		EF28350818F76442006295B2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF28350018F76442006295B2 /* MobileCoreServices.framework */; };
 		EF28350918F76442006295B2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF28350118F76442006295B2 /* OpenGLES.framework */; };
 		EF28350A18F76442006295B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF28350218F76442006295B2 /* QuartzCore.framework */; };
+		EFAEDBD718F8AE670072790D /* simulatorPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDBD618F8AE670072790D /* simulatorPreviewView.m */; };
+		EFAEDBDA18F8AE920072790D /* simulatorProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDBD918F8AE920072790D /* simulatorProcessor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,10 @@
 		EF28350018F76442006295B2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		EF28350118F76442006295B2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		EF28350218F76442006295B2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EFAEDBD518F8AE670072790D /* simulatorPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simulatorPreviewView.h; sourceTree = "<group>"; };
+		EFAEDBD618F8AE670072790D /* simulatorPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = simulatorPreviewView.m; sourceTree = "<group>"; };
+		EFAEDBD818F8AE920072790D /* simulatorProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simulatorProcessor.h; sourceTree = "<group>"; };
+		EFAEDBD918F8AE920072790D /* simulatorProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = simulatorProcessor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,11 +150,12 @@
 		EF2834CC18F75D06006295B2 /* Blood Flow Simulator */ = {
 			isa = PBXGroup;
 			children = (
+				EFAEDBD418F8AE2C0072790D /* View */,
+				EFAEDBD318F8AE260072790D /* Model */,
+				EFAEDBD218F8AE1B0072790D /* Controller */,
 				EF2834D518F75D06006295B2 /* simulatorAppDelegate.h */,
 				EF2834D618F75D06006295B2 /* simulatorAppDelegate.m */,
 				EF2834D818F75D06006295B2 /* Main.storyboard */,
-				EF2834DB18F75D06006295B2 /* simulatorViewController.h */,
-				EF2834DC18F75D06006295B2 /* simulatorViewController.m */,
 				EF2834DE18F75D06006295B2 /* Images.xcassets */,
 				EF2834CD18F75D06006295B2 /* Supporting Files */,
 			);
@@ -182,6 +189,33 @@
 				EF2834EE18F75D06006295B2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFAEDBD218F8AE1B0072790D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF2834DB18F75D06006295B2 /* simulatorViewController.h */,
+				EF2834DC18F75D06006295B2 /* simulatorViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EFAEDBD318F8AE260072790D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFAEDBD818F8AE920072790D /* simulatorProcessor.h */,
+				EFAEDBD918F8AE920072790D /* simulatorProcessor.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EFAEDBD418F8AE2C0072790D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFAEDBD518F8AE670072790D /* simulatorPreviewView.h */,
+				EFAEDBD618F8AE670072790D /* simulatorPreviewView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +321,8 @@
 			files = (
 				EF2834D318F75D06006295B2 /* main.m in Sources */,
 				EF2834DD18F75D06006295B2 /* simulatorViewController.m in Sources */,
+				EFAEDBD718F8AE670072790D /* simulatorPreviewView.m in Sources */,
+				EFAEDBDA18F8AE920072790D /* simulatorProcessor.m in Sources */,
 				EF2834D718F75D06006295B2 /* simulatorAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +532,7 @@
 				EF2834F718F75D06006295B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF2834F818F75D06006295B2 /* Build configuration list for PBXNativeTarget "Blood Flow SimulatorTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +541,7 @@
 				EF2834FA18F75D06006295B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
