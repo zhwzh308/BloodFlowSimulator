@@ -18,7 +18,7 @@ GLint glueCompileShader(GLenum target,
                         const GLchar **sources,
                         GLuint *shader);
 
-Glint glueLinkProgram(GLuint program);
+GLint glueLinkProgram(GLuint program);
 GLint glueValidateProgram(GLuint program);
 GLint glueGetUniformLocation(GLuint program, const GLchar *name);
 

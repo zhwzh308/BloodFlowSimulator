@@ -47,7 +47,7 @@
 }
 
 #pragma mark -
-#pragma mark -
+#pragma mark Memory management
 
 - (void) applicationDidReceiveMemoryWarning:(UIApplication *)application {
     // Free up resourse!

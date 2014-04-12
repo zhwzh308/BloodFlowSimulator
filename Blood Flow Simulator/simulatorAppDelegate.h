@@ -11,10 +11,10 @@
 @class simulatorViewController;
 
 @interface simulatorAppDelegate : UIResponder <UIApplicationDelegate> {
-    simulatorViewController *simulatorVC;
+    simulatorViewController *_simulatorVC;
 }
 
-@property (strong, nonatomic) UIWindow *window;
-@property (nonatomic, retain) simulatorViewController *simulatorVC;
+@property (strong, nonatomic) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet simulatorViewController *simulatorVC;
 
 @end

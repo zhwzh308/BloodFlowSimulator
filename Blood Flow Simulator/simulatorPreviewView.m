@@ -135,12 +135,12 @@ enum {
     
     // Validate program before drawing. This is a good check, but only really necessary in a debug build.
     // DEBUG macro must be defined in your debug configurations if that's not already the case.
-#if defined(DEBUG)
-    if (glueValidateProgram(passThroughProgram) != 0) {
-        NSLog(@"Failed to validate program: %d", passThroughProgram);
-        return;
-    }
-#endif
+//#if defined(DEBUG)
+    //if (glueValidateProgram(passThroughProgram) != 0) {
+        //NSLog(@"Failed to validate program: %d", passThroughProgram);
+        //return;
+    //}
+//#endif
 	
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
     
@@ -246,9 +246,10 @@ enum {
     glBindTexture(CVOpenGLESTextureGetTarget(texture), 0);
     
     CVOpenGLESTextureCacheFlush(videoTextureCache, 0);
+    CFRelease(texture);
 }
 
-- (void) dealloc {
+- (void) deallocMe {
     if (frameBufferHandle) {
         glDeleteFramebuffers(1, &frameBufferHandle);
         frameBufferHandle = 0;
