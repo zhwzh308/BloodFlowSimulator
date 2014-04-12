@@ -31,6 +31,9 @@
 		EF28350A18F76442006295B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF28350218F76442006295B2 /* QuartzCore.framework */; };
 		EFAEDBD718F8AE670072790D /* simulatorPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDBD618F8AE670072790D /* simulatorPreviewView.m */; };
 		EFAEDBDA18F8AE920072790D /* simulatorProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDBD918F8AE920072790D /* simulatorProcessor.m */; };
+		EFAEDBDE18F8BA040072790D /* ShaderUtility.c in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDBDD18F8BA040072790D /* ShaderUtility.c */; };
+		EFAEDBE018F8C3500072790D /* passThrough.fsh in Resources */ = {isa = PBXBuildFile; fileRef = EFAEDBDF18F8C3500072790D /* passThrough.fsh */; };
+		EFAEDBE218F8C3740072790D /* passThrough.vsh in Resources */ = {isa = PBXBuildFile; fileRef = EFAEDBE118F8C3740072790D /* passThrough.vsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,10 @@
 		EFAEDBD618F8AE670072790D /* simulatorPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = simulatorPreviewView.m; sourceTree = "<group>"; };
 		EFAEDBD818F8AE920072790D /* simulatorProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simulatorProcessor.h; sourceTree = "<group>"; };
 		EFAEDBD918F8AE920072790D /* simulatorProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = simulatorProcessor.m; sourceTree = "<group>"; };
+		EFAEDBDC18F8B94E0072790D /* ShaderUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderUtility.h; sourceTree = "<group>"; };
+		EFAEDBDD18F8BA040072790D /* ShaderUtility.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ShaderUtility.c; sourceTree = "<group>"; };
+		EFAEDBDF18F8C3500072790D /* passThrough.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = passThrough.fsh; sourceTree = "<group>"; };
+		EFAEDBE118F8C3740072790D /* passThrough.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = passThrough.vsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +157,7 @@
 		EF2834CC18F75D06006295B2 /* Blood Flow Simulator */ = {
 			isa = PBXGroup;
 			children = (
+				EFAEDBDB18F8B92C0072790D /* ShaderUtilities */,
 				EFAEDBD418F8AE2C0072790D /* View */,
 				EFAEDBD318F8AE260072790D /* Model */,
 				EFAEDBD218F8AE1B0072790D /* Controller */,
@@ -216,6 +224,17 @@
 				EFAEDBD618F8AE670072790D /* simulatorPreviewView.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		EFAEDBDB18F8B92C0072790D /* ShaderUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				EFAEDBDC18F8B94E0072790D /* ShaderUtility.h */,
+				EFAEDBDD18F8BA040072790D /* ShaderUtility.c */,
+				EFAEDBDF18F8C3500072790D /* passThrough.fsh */,
+				EFAEDBE118F8C3740072790D /* passThrough.vsh */,
+			);
+			name = ShaderUtilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,8 +317,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAEDBE218F8C3740072790D /* passThrough.vsh in Resources */,
 				EF2834DF18F75D06006295B2 /* Images.xcassets in Resources */,
 				EF2834D118F75D06006295B2 /* InfoPlist.strings in Resources */,
+				EFAEDBE018F8C3500072790D /* passThrough.fsh in Resources */,
 				EF2834DA18F75D06006295B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2834D318F75D06006295B2 /* main.m in Sources */,
+				EFAEDBDE18F8BA040072790D /* ShaderUtility.c in Sources */,
 				EF2834DD18F75D06006295B2 /* simulatorViewController.m in Sources */,
 				EFAEDBD718F8AE670072790D /* simulatorPreviewView.m in Sources */,
 				EFAEDBDA18F8AE920072790D /* simulatorProcessor.m in Sources */,
