@@ -497,11 +497,11 @@
     [self step1_pixelFromRGBtoYCbCr];
     [self step2_densityRegularization];
     // Render loop
-    //CGFloat hr_sim = 40.0f * sinf(currentTime * 6.28f * [self heartRate] / 60.0f);
+    CGFloat hr_sim = 40.0f * sinf(currentTime * 6.28f * [self heartRate] / 60.0f);
     if (yuvBufferRef != NULL) {
         CVBufferRelease(yuvBufferRef);
     }
-    baseAddress += 3;
+    baseAddress += 2;
     for (int row = 0; row < inBuffer.height; ++row) {
         for (int col = 0; col < inBuffer.width; ++col) {
             if (tmp[row][col]) {
@@ -509,13 +509,21 @@
                 // pixel[0] = pixel[1] = pixel[2] = 0;
                 /* Lasy  calculation: only when the condition is matched. */
                 //CGFloat to_color = ((float) *baseAddress) + hr_sim;
-                *baseAddress = 128;
+                CGFloat to_color = ((float) *baseAddress) + hr_sim;
+                if (to_color >= 255.0f) {
+                    *baseAddress = 255;
+                } else if (to_color <= 0.0f){
+                    *baseAddress = 0;
+                }
+                else {
+                    *baseAddress = (unsigned char) to_color;
+                }
             }
             baseAddress += BYTES_PER_PIXEL;
         }
     }
-    vImagePremultiplyData_BGRA8888(&inBuffer, &inBuffer, kvImageNoFlags);
-    vImagePremultipliedAlphaBlend_BGRA8888(&inBuffer, &redBuffer, &inBuffer, kvImageNoFlags);
+    //vImagePremultiplyData_BGRA8888(&inBuffer, &inBuffer, kvImageNoFlags);
+    //vImagePremultipliedAlphaBlend_BGRA8888(&inBuffer, &redBuffer, &inBuffer, kvImageNoFlags);
     CVPixelBufferUnlockBaseAddress( pixelBuffer, 0 );
 }
 
@@ -670,22 +678,6 @@
 
 - (BOOL) setupCaptureSession
 {
-	/*
-     Overview: RosyWriter uses separate GCD queues for audio and video capture.  If a single GCD queue
-     is used to deliver both audio and video buffers, and our video processing consistently takes
-     too long, the delivery queue can back up, resulting in audio being dropped.
-     
-     When recording, RosyWriter creates a third GCD queue for calls to AVAssetWriter.  This ensures
-     that AVAssetWriter is not called to start or finish writing from multiple threads simultaneously.
-     
-     RosyWriter uses AVCaptureSession's default preset, AVCaptureSessionPresetHigh.
-	 */
-    
-    /*
-	 * Create capture session
-     * Instead of not configuring the preset, let's make it VGA
-     * This way, we have no need to worry about selecting video area.
-	 */
     captureSession = [[AVCaptureSession alloc] init];
     NSString *option = isUsingFrontCamera?AVCaptureSessionPreset640x480:AVCaptureSessionPresetiFrame960x540;
     if ([captureSession canSetSessionPreset:option]) {
@@ -737,18 +729,9 @@
 	//[videoIn release];
     
 	AVCaptureVideoDataOutput *videoOut = [[AVCaptureVideoDataOutput alloc] init];
-	/*
-     RosyWriter prefers to discard late video frames early in the capture pipeline, since its
-     processing can take longer than real-time on some platforms (such as iPhone 3GS).
-     Clients whose image processing is faster than real-time should consider setting AVCaptureVideoDataOutput's
-     alwaysDiscardsLateVideoFrames property to NO.
-	 */
     
     // Experiment: performance demanding setting. Set to yes for old platforms.
 	[videoOut setAlwaysDiscardsLateVideoFrames:YES];
-    // Camera pixel buffers are natively YUV but most image processing algorithms expect RBGA data.
-	// [videoOut setVideoSettings:[NSDictionary dictionaryWithObject:[NSNumber numberWithInt:kCVPixelFormatType_32BGRA] forKey:(id)kCVPixelBufferPixelFormatTypeKey]];
-    // using kCVPixelFormatType_420YpCvCr88iPlanarFullRange, full-range (luma=[0,255] chroma=[1,255])
     
     NSDictionary *options = @{(id)kCVPixelBufferPixelFormatTypeKey:
                                   [NSNumber numberWithInt:kCVPixelFormatType_32BGRA]};
@@ -1003,7 +986,6 @@ int detect_peak (
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
         [alertView show];
-        // [alertView release];
     });
 }
 
