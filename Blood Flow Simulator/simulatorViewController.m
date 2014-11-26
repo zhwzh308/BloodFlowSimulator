@@ -9,10 +9,6 @@
 #import <QuartzCore/QuartzCore.h>
 #import "simulatorViewController.h"
 
-static inline double radians (double degrees) {
-    return degrees * (M_PI / 180);
-}
-
 @interface simulatorViewController ()
 
 @end
